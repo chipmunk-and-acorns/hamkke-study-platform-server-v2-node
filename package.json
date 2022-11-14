@@ -1,0 +1,27 @@
+{
+  "name": "hamkke-server-v2",
+  "version": "1.0.0",
+  "description": "refactor service to hamkke study",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node.git"
+  },
+  "keywords": [
+    "hamkke",
+    "study"
+  ],
+  "author": "chipmunkdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node/issues"
+  },
+  "homepage": "https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
