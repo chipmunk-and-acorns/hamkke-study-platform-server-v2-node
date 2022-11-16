@@ -1,0 +1,12 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "server",
+      "image": "chipmunkdev/hamkke-server",
+      "hostname": "server",
+      "essential": false,
+      "memory": 128
+    }
+  ]
+}

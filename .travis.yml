@@ -10,3 +10,12 @@ after_success:
   - docker build -t chipmunkdev/hamkke-server ./server
   - echo "$DOCKER_HUB_PASSWORD" | docker login -u "$DOCKER_HUB_ID" --password-stdin
   - docker push chipmunkdev/hamkke-server
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-northeast-2"
+  app: "hamkke-server"
+  env: "Hamkkeserver-env"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-492504490769"
+  bucket_pass: "hamkke-server"
+  on:
+    branch: main
