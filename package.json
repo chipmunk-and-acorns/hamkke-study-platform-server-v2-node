@@ -1,0 +1,22 @@
+{
+  "name": "hamkke-server-v2",
+  "version": "1.0.0",
+  "description": "hamkke study server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node.git"
+  },
+  "keywords": [
+    "hamkke"
+  ],
+  "author": "chipmunkdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node/issues"
+  },
+  "homepage": "https://github.com/chipmunk-and-acorns/hamkke-study-platform-server-v2-node#readme"
+}
