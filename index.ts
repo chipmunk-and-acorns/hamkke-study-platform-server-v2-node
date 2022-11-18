@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import morgan from "morgan";
 import errorhandler from "errorhandler";
-
+import "reflect-metadata"
 
 const app = express();
 const corsOptions = {
