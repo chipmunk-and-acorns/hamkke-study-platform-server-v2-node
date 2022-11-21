@@ -23,6 +23,10 @@
  * @apiBody {string} email
  * @apiBody {string} password
  *
+ * @apiSuccess (200) {number} id 유저 아이디
+ * @apiSuccess (200) {String} email 유저 이메일
+ * @apiSuccess (200) {String} nickname 유저 닉네임
+ *
  * @apiError (400) InvalidInformation email or password 가 일치하지 않습니다.
  * @apiError (500) ServerError 데이터베이스 또는 서버에 문제가 생겼습니다.
  */
@@ -37,6 +41,10 @@
  * @apiBody {string} email
  * @apiBody {string} password
  * @apiBody {string} nickname
+ *
+ * @apiSuccess (200) {number} id 유저 아이디
+ * @apiSuccess (200) {String} email 유저 이메일
+ * @apiSuccess (200) {String} nickname 유저 닉네임
  *
  * @apiError (400) InvalidInformation email or password or nickname 유효성 검사 실패
  * @apiError (500) ServerError 데이터베이스 또는 서버에 문제가 생겼습니다.
