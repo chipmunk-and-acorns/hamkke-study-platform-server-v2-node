@@ -1,6 +1,7 @@
 // global
 import express, {Request, Response} from "express"
 import bodyParser from "body-parser";
+import cookieParser from "cookie-parser";
 import cors from "cors";
 import morgan from "morgan";
 //local
@@ -19,6 +20,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions)); // cors 옵션을 토대로 express 에 적용
 app.use(bodyParser.json()); // body 의 json 데이터 읽도록 적용
+app.use(cookieParser());
 app.use(express.static('public/apidoc'))
 
 

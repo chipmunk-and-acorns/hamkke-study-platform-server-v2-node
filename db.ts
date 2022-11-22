@@ -10,7 +10,8 @@ const AppDataSource = new DataSource({
     database: process.env.DB_DATABASE,
     entities: [User],
     synchronize: true,
-    logging: false
+    logging: false,
+    migrations: [__dirname + "/migration/"]
 });
 
 AppDataSource.initialize()
