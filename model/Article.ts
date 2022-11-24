@@ -22,23 +22,23 @@ export class Article {
     id: number;
     @Column({type: "int"})
     userId: number;
-    @Column({type: "text"})
+    @Column({type: "varchar"})
     title: string;
-    @Column({type: "text", length: 5000})
+    @Column({type: "varchar", length: 5000})
     content: string;
     @Column({type: "int", nullable: true})
     personnel: number | null;
-    @Column({type: "text", length: 20})
+    @Column({type: "varchar", length: 20})
     type: ArticleType;
-    @Column({type: "text", length: 20})
+    @Column({type: "varchar", length: 20})
     proceeding: ArticleProceeding;
-    @Column({type: "number", nullable: true})
+    @Column({type: "int", nullable: true})
     period: number | null;
     @Column({type: "date"})
     startDate: Date;
-    @Column({type: "text", length: 20})
+    @Column({type: "varchar", length: 20})
     contactKind: ArticleContactKind;
-    @Column({type: "text", length: 100})
+    @Column({type: "varchar", length: 100})
     contactLink: string;
     @CreateDateColumn()
     createdAt: Date;
