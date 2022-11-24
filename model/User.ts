@@ -1,4 +1,4 @@
-import {BeforeInsert, Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {BeforeInsert, Column, CreateDateColumn, Entity, PrimaryGeneratedColumn} from "typeorm";
 import bcrypt from "bcrypt";
 
 @Entity()
@@ -13,6 +13,8 @@ export class User {
     nickname: string
     @Column("text", {nullable: true})
     token: string
+    @CreateDateColumn()
+    createdAt: Date;
 
     @BeforeInsert()
     async generatePasswordHash() {

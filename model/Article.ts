@@ -1,4 +1,4 @@
-import {Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {Column, CreateDateColumn, Entity, PrimaryGeneratedColumn, UpdateDateColumn} from "typeorm";
 
 export enum ArticleType {
     STUDY = "study",
@@ -40,4 +40,8 @@ export class Article {
     contactKind: ArticleContactKind;
     @Column({type: "text", length: 100})
     contactLink: string;
+    @CreateDateColumn()
+    createdAt: Date;
+    @UpdateDateColumn()
+    modifiedAt: Date;
 }
